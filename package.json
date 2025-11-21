@@ -5,8 +5,8 @@
   "main": "index.js",
   "private": true, 
   "scripts": {
-    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
-    "start": "concurrently \"npm --prefix backend run start\" \"npm --prefix frontend run start\"",
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "start": "concurrently \"npm start --prefix backend\" \"npm start --prefix frontend\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
